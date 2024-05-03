@@ -1,0 +1,52 @@
+# Ignore Django migration files
+*.pyc
+__pycache__
+db.sqlite3
+/migrations/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables
+.env
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore Python virtual environment
+.env/
+venv/
+
+# Ignore logs and temporary files
+*.log
+*.swp
+*.swo
+*.tmp
+*.bak
+*.cache/
+
+# Ignore compiled files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore package distribution files
+*.egg-info/
+dist/
+build/
+
+# Ignore test database
+*.db
+
+# Ignore local settings
+local_settings.py
+
+# Ignore backup files
+*.bak
+*.sql
+
+# Ignore media and static files (if managed externally)
+/media/
+/static/
