@@ -46,6 +46,7 @@ class PostRetrieveUpdateDeleteView(APIView):
 
     def get(self, request: Request, post_id: int):
         post = get_object_or_404(Post, pk=post_id)
+        # post = Post.objects.get(pk=post_id)
         serializer = self.serializer_class(instance=post)
 
         return Response(data=serializer.data, status=status.HTTP_200_OK)
@@ -62,6 +63,7 @@ class PostRetrieveUpdateDeleteView(APIView):
     
     def delete(self,request:Request,post_id:int):
         post = get_object_or_404(Post,pk =post_id)
+        # post = Post.objects.get(pk=post_id)
         post.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)        
 
